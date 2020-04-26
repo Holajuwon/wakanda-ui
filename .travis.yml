@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+    - node_modules
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: Sbo43kcqFhaRV2n+OmNS7BsCvmUx0bsyjmBp4tculORHBXbXxyBJPLyIxYshF465DjbIXa81oTeeEk2LexNwiyMRUed4bMBvZy3oP/8PSBrRVBM1rT2aAgq7LI+kcJPPJQ1tl+vziRAXEXt7fNzsFIH3ZQfY7spPWEXQplvltP3HiQoxVnK5R/JZmYMgIwhaH4Nod/rkhO9JdltLt0psLwIiTG0lSr+32ODAIafaRT0SuKH8PbxCN9p+7um0P4rRk3f5wA/GXw685t/+DJAdo6MUpewbSkWGF2POdhW6fcXyH72h3uUyngCyhmLtUY3X3iiun8GWiM9BfMaG/WSii6NQXyXXztLsbKE9RovMGOlUS+f06juDnXvGhhfSdDHbeKkDPojDAQ8WN3gJr/OsB+KX4t1LWOt5SV5KQ9E13MplIzEmL5COSVFz01zdLzHFVrOyMyRA4cSMMf03Qnz7d++vpliGCuIaD07N7fbujOMuYpoW2KCngxJ2XuSWMedyhR4vj9orC1E9fG55FqRYVTLHXJ4MN32eVlIaymJc7OzMW3cdZFqC+G02nT2bouxzlUl1bNH1M8LmAriDcORLoVJAd0EblRoy9UgI1FetI1HHhlkE/QTUPQN+DRfLSsju7PxeBaDDDfaF6CfkkAdWVJGX1w13fxNnkwdwXcNmiYk=
+  app: wakanda-ui
+  on:
+    repo: Holajuwon/wakanda-ui
+    branch: master

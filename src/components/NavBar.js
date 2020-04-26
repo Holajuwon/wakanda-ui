@@ -34,7 +34,7 @@ const Navbar = () => {
         <Link
           target="_blank"
           rel="noopener noreferrer"
-          href="https://github.com/Holajuwon/"
+          href="https://github.com/Holajuwon/wakanda-ui"
         >
           <Box size={28} as={FaGithub} />
         </Link>
