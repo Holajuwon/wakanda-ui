@@ -1,9 +1,9 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import Error from "./Pages/Error";
+import Footer from "./components/Footer";
 
 test("renders Chrakra UI in App", () => {
-  const { getByText } = render(<Error />);
-  const element = getByText(/404/i);
+  const { getByText } = render(<Footer />);
+  const element = getByText(/Hola/i);
   expect(element).toBeInTheDocument();
 });
