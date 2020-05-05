@@ -13,7 +13,9 @@ export const Login = ({ text, color, hidden }) => {
   const responseGoogle = (response) => {
     if (response.profileObj)
       axios
-        .get(`/users?googleId=${response.profileObj.googleId}`)
+        .get(
+          `http://localhost:9000/users?googleId=${response.profileObj.googleId}`
+        )
         .then((res) => {
           history.push({
             pathname: "/dashboard",
@@ -51,7 +53,7 @@ export const Register = ({ text, color, hidden }) => {
 
   const responseGoogle = (response) => {
     axios
-      .post("/users", response.profileObj)
+      .post("http://localhost:9000/users", response.profileObj)
       .then((res) => {
         history.push({
           pathname: "/dashboard",
