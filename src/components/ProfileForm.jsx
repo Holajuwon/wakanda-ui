@@ -35,7 +35,7 @@ export const ProfileForm = ({ data }) => {
 
   const handleSubmit = async () => {
     await axios
-      .put(`/users/${user.id}`, user)
+      .put(`http://localhost:9000/users/${user.id}`, user)
       .then(async () => {
         toast({
           position: "top",

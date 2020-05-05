@@ -52,7 +52,7 @@ const UploadCourse = ({}) => {
         if (data.data.secure_url !== "") {
           const uploadedFileUrl = data.data.secure_url;
           console.log(uploadedFileUrl);
-          await Axios.post("/courses", {
+          await Axios.post("http://localhost:9000/courses", {
             ...input,
             courseUrl: uploadedFileUrl,
             tutorId: history.location.state.googleId,

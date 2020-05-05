@@ -14,10 +14,10 @@ const Home = () => {
         w="80vw"
       >
         <Heading mt={20} textAlign="center">
-          Heading title ydsdusdb s jsdvvsjgh dsuvb dvuialsdcaildvdh
+          Welcome To wakanda
         </Heading>
-        <Text>Text value</Text>
-        <Text>Text value</Text>
+        <Text fontSize="xl">Learn New Skills With us.</Text>
+        <Text fontSize="2xl">Aspire. Accomplish</Text>
         <Login text="Register With Google" color="green" />
       </Flex>
     </Layout>
