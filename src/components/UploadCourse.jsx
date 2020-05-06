@@ -14,6 +14,7 @@ import {
 import { MdCloudUpload } from "react-icons/md";
 import Axios from "axios";
 import { useHistory } from "react-router-dom";
+const port = process.env.PORT || 9000;
 
 const UploadCourse = ({}) => {
   const toast = useToast();
@@ -39,7 +40,6 @@ const UploadCourse = ({}) => {
       "upload_preset",
       process.env.REACT_APP_CLOUDINARY_UPLOAD_PRESET
     );
-    console.log("toeched");
     Axios.post(process.env.REACT_APP_CLOUDINARY_BASE_URL, formData, {
       onUploadProgress: (progressEvent) => {
         let percent = Math.round(
@@ -52,7 +52,7 @@ const UploadCourse = ({}) => {
         if (data.data.secure_url !== "") {
           const uploadedFileUrl = data.data.secure_url;
           console.log(uploadedFileUrl);
-          await Axios.post("http://localhost:9000/courses", {
+          await Axios.post(`http://localhost:${port}/courses`, {
             ...input,
             courseUrl: uploadedFileUrl,
             tutorId: history.location.state.googleId,

@@ -6,6 +6,7 @@ import Layout from "./Layout";
 import PropTypes from "prop-types";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
+const port = process.env.PORT || 9000;
 
 export const Login = ({ text, color, hidden }) => {
   const history = useHistory();
@@ -14,7 +15,7 @@ export const Login = ({ text, color, hidden }) => {
     if (response.profileObj)
       axios
         .get(
-          `http://localhost:9000/users?googleId=${response.profileObj.googleId}`
+          `http://localhost:${port}/users?googleId=${response.profileObj.googleId}`
         )
         .then((res) => {
           history.push({
@@ -53,7 +54,7 @@ export const Register = ({ text, color, hidden }) => {
 
   const responseGoogle = (response) => {
     axios
-      .post("http://localhost:9000/users", response.profileObj)
+      .post(`http://localhost:${port}/users`, response.profileObj)
       .then((res) => {
         history.push({
           pathname: "/dashboard",

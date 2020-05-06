@@ -21,6 +21,7 @@ import {
 } from "@chakra-ui/core";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
+const port = process.env.PORT || 9000;
 
 export const ProfileForm = ({ data }) => {
   const history = useHistory();
@@ -35,7 +36,7 @@ export const ProfileForm = ({ data }) => {
 
   const handleSubmit = async () => {
     await axios
-      .put(`http://localhost:9000/users/${user.id}`, user)
+      .put(`http://localhost:${port}/users/${user.id}`, user)
       .then(async () => {
         toast({
           position: "top",
@@ -84,6 +85,7 @@ export const ProfileForm = ({ data }) => {
                 data.role = user.role;
                 await onOpen();
                 await handleSubmit();
+                history.go();
               }}
               isDisabled={!user.role}
             >
