@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "sixtusiwuchukwu21@gmail.com",
+      "familyName": "iwuchukwu",
+      "givenName": "sixtus",
+      "googleId": "111125294531920829324",
+      "name": "sixtus iwuchukwu",
+      "imageUrl": "https://lh3.googleusercontent.com/a-/AOh14Gi7Ltp0QqsLffFn5uQLOnYe4ptNkZWhRdWr_B7G=s96-c",
+      "bio": "Student of FUTO"
+    },
+    {
+      "googleId": "109189357126726762185",
+      "imageUrl": "https://lh4.googleusercontent.com/-ybFTbmMobbA/AAAAAAAAAAI/AAAAAAAAAAA/AAKWJJOGdCIJ0mwdNo31ywuIpdN9A_9t5A/s96-c/photo.jpg",
+      "email": "adefunkeowoseni@gmail.com",
+      "name": "Adefunke Owoseni",
+      "givenName": "Adefunke",
+      "familyName": "Owoseni",
+      "id": 2,
+      "bio": "I am a tech enthusiast",
+      "twitter": "Hola_Juwon",
+      "linkedin": "owoseniolajuwon21",
+      "role": "Tutor"
+    }
+  ],
+  "courses": [
+    {
+      "instructor": "Troy",
+      "courseTitle": "How To Eat and Sleep",
+      "courseUrl": "https://res.cloudinary.com/dobztfsdj/video/upload/v1588174345/xxtystguqjhgtc4xr8ml.mp4",
+      "id": 5
+    },
+    {
+      "courseTitle": "How To Eat and Sleep",
+      "instructor": "Tade",
+      "courseUrl": "https://res.cloudinary.com/dobztfsdj/video/upload/v1588174345/xxtystguqjhgtc4xr8ml.mp4",
+      "id": 6
+    },
+    {
+      "courseTitle": "Hack Google Like Right Now",
+      "instructor": "Hacker Gee",
+      "courseUrl": "https://res.cloudinary.com/dobztfsdj/video/upload/v1588174345/xxtystguqjhgtc4xr8ml.mp4",
+      "id": 7
+    }
+  ]
+}
